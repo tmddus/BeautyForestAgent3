@@ -34,7 +34,6 @@
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.fontBtn = new System.Windows.Forms.ToolStripButton();
             this.colorBtn = new System.Windows.Forms.ToolStripButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +45,7 @@
             this.colorBtn});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(731, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -58,6 +57,7 @@
             this.fontBtn.Name = "fontBtn";
             this.fontBtn.Size = new System.Drawing.Size(23, 22);
             this.fontBtn.Text = "toolStripButton1";
+            this.fontBtn.Click += new System.EventHandler(this.FontBtn_Click);
             // 
             // colorBtn
             // 
@@ -67,21 +67,13 @@
             this.colorBtn.Name = "colorBtn";
             this.colorBtn.Size = new System.Drawing.Size(23, 22);
             this.colorBtn.Text = "toolStripButton2";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 396);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(703, 42);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "전송";
-            this.button1.UseVisualStyleBackColor = true;
+            this.colorBtn.Click += new System.EventHandler(this.ColorBtn_Click);
             // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(12, 37);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(703, 353);
+            this.richTextBox1.Size = new System.Drawing.Size(703, 383);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             // 
@@ -89,9 +81,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(731, 449);
             this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "FormOpinion";
             this.Text = "FormOpinion";
@@ -109,7 +100,6 @@
         private System.Windows.Forms.ToolStripButton colorBtn;
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
